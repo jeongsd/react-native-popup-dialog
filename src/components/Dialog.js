@@ -6,8 +6,7 @@ import {
   StyleSheet,
   Animated,
   Dimensions,
-  BackAndroid as RNBackAndroid,
-  BackHandler as RNBackHandler,
+  BackHandler
 } from 'react-native';
 
 import Overlay from './Overlay';
@@ -15,8 +14,6 @@ import type { DialogProps } from '../type';
 import FadeAnimation from '../animations/FadeAnimation';
 import ScaleAnimation from '../animations/ScaleAnimation';
 import SlideAnimation from '../animations/SlideAnimation';
-
-const BackHandler = RNBackHandler || RNBackAndroid;
 
 // dialog states
 const DIALOG_OPENING: string = 'opening';
